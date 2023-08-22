@@ -1,4 +1,5 @@
-"use client";import BreadCrumb from "@/components/BreadCrumb";
+"use client";
+import BreadCrumb from "@/components/BreadCrumb";
 import CardI from "@/components/CardI";
 import React from "react";
 import logo1 from "../../assets/images/topics/undraw_Remote_design_team_re_urdx.png";
@@ -14,9 +15,24 @@ const TopicsListing = () => {
             Popular Topics
           </h3>
 
-          <CardI active="active" logo={logo1} spanBG={"bg-red-500"} />
-          <CardI active="active" logo={logo1} spanBG={"bg-red-500"} />
-          <CardI active="active" logo={logo1} spanBG={"bg-red-500"} />
+          <CardI
+            key={"one"}
+            active="active"
+            logo={logo1}
+            spanBG={"bg-red-500"}
+          />
+          <CardI
+            key={"two"}
+            active="active"
+            logo={logo1}
+            spanBG={"bg-red-500"}
+          />
+          <CardI
+            key={"three"}
+            active="active"
+            logo={logo1}
+            spanBG={"bg-red-500"}
+          />
 
           <div className="flex items-center gap-2 justify-center capitalize text-xl  text-p-color">
             <p className="rounded-[10px] bg-section-bg-color p-3 py-4 px-5">
