@@ -1,10 +1,10 @@
-"use client";
-import Image from "next/image";
+"use client";import Image from "next/image";
 // import { Button } from "@material-tailwind/react";
 import React from "react";
-const CardI = ({ logo, spanBG, active }) => {
+const CardI = ({ logo, spanBG, active, key }) => {
   return (
     <div
+      key={key}
       className={`bg-white rounded-2xl ${
         active
           ? "lg:w-[670px] lg:h[248px] md:w-[576px] md:h[308px] shadow-[0_8px_30px_rgb(0,0,0,0.12)] mb-11  mx-auto"
