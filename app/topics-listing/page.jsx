@@ -1,4 +1,5 @@
-"use client";import BreadCrumb from "@/components/BreadCrumb";
+"use client";
+import BreadCrumb from "@/components/BreadCrumb";
 import CardI from "@/components/CardI";
 import React from "react";
 import logo1 from "../../assets/images/topics/undraw_Remote_design_team_re_urdx.png";
@@ -67,7 +68,7 @@ const TopicsListing = () => {
             Trending Topics
           </h3>
           <div className="flex flex-col lg:flex-row gap-5 items-center container -translate-y-28 ">
-            <CardI logo={logo1} spanBG={"bg-[#00B0FF]"} />
+            <CardI key={"hi"} logo={logo1} spanBG={"bg-[#00B0FF]"} />
             <CardII />
           </div>
         </div>
