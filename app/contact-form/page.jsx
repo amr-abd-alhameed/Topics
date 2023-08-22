@@ -1,5 +1,5 @@
-"use client";import BreadCrumb from "@/components/BreadCrumb";
-// import { Form } from "@/components/Form";
+"use client";
+import BreadCrumb from "@/components/BreadCrumb";
 
 import React from "react";
 
@@ -9,9 +9,7 @@ const page = () => {
       <BreadCrumb />
 
       <div className="bg-section-bg-color py-[100px] ">
-        <div className="container text-center flex items-center justify-center pb-[100px]">
-          {/* <Form /> */}
-        </div>
+        <div className="container text-center flex items-center justify-center pb-[100px]"></div>
       </div>
     </section>
   );
