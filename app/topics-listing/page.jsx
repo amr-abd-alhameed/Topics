@@ -1,4 +1,5 @@
-"use client";import BreadCrumb from "@/components/BreadCrumb";
+"use client";
+import BreadCrumb from "@/components/BreadCrumb";
 import CardI from "@/components/CardI";
 import React from "react";
 import logo1 from "../../assets/images/topics/undraw_Remote_design_team_re_urdx.png";
@@ -24,7 +25,10 @@ const TopicsListing = () => {
             </p>
             <ul className="flex items-center gap-2">
               {numbers.map((num) => (
-                <li className="py-4 px-5 hover:text-white rounded-[10px] first-of-type:text-white first-of-type:bg-secondary-color hover:bg-secondary-color">
+                <li
+                  key={num}
+                  className="py-4 px-5 hover:text-white rounded-[10px] first-of-type:text-white first-of-type:bg-secondary-color hover:bg-secondary-color"
+                >
                   {num}
                 </li>
               ))}
